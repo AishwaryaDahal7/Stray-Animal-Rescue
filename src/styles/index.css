@@ -1,0 +1,80 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom global styles */
+@layer components {
+  .btn-primary {
+    @apply px-4 py-2 bg-primary-500 text-white rounded-lg font-medium hover:bg-primary-600 transition-colors;
+  }
+
+  .btn-secondary {
+    @apply px-4 py-2 bg-accent-500 text-white rounded-lg font-medium hover:bg-accent-600 transition-colors;
+  }
+
+  .btn-ghost {
+    @apply px-4 py-2 border border-neutral-300 text-neutral-700 rounded-lg font-medium hover:bg-neutral-50 transition-colors;
+  }
+
+  .card {
+    @apply bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow;
+  }
+
+  .input-field {
+    @apply w-full px-4 py-2 border border-neutral-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-500;
+  }
+
+  .section-title {
+    @apply text-3xl font-bold text-neutral-900 mb-6;
+  }
+
+  .section-subtitle {
+    @apply text-lg text-neutral-600 mb-4;
+  }
+}
+
+/* Smooth scroll behavior */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #22c55e;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #16a34a;
+}
+
+/* Leaflet map custom styles */
+.leaflet-container {
+  @apply rounded-lg shadow-md;
+}
+
+/* Toast notifications */
+.Toastify__toast {
+  @apply rounded-lg shadow-lg;
+}
+
+.Toastify__toast--success {
+  @apply bg-primary-500;
+}
+
+.Toastify__toast--error {
+  @apply bg-red-500;
+}
+
+.Toastify__toast--info {
+  @apply bg-blue-500;
+}
