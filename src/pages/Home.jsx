@@ -5,8 +5,15 @@ export default function Home() {
   return (
     <div>
       {/* Hero Section */}
-      <section className="bg-gradient-to-r from-primary-500 via-primary-400 to-accent-400 text-white py-20">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <section className="relative bg-gradient-to-r from-primary-500 via-primary-400 to-accent-400 text-white py-20 overflow-hidden">
+        <div className="absolute inset-0 opacity-30">
+          <img 
+            src="https://images.unsplash.com/photo-1587300411515-71e0ba4a8d0e?w=1200&h=600&fit=crop" 
+            alt="Animal Rescue" 
+            className="w-full h-full object-cover"
+          />
+        </div>
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-5xl md:text-6xl font-bold mb-6">
             Save Lives, Rescue Animals
           </h1>

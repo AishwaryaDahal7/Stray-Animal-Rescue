@@ -23,6 +23,11 @@ export default function About() {
           <p className="text-neutral-700 mb-4">
             Our platform connects concerned citizens with dedicated rescue teams and centers, enabling quick response to animal emergencies. We're committed to reducing animal suffering and building a more compassionate society.
           </p>
+          <img 
+            src="https://images.unsplash.com/photo-1552053831-71594a27c62d?w=500&h=400&fit=crop" 
+            alt="Our Mission" 
+            className="rounded-lg shadow-md mt-6 w-full object-cover"
+          />
         </div>
         <div className="bg-primary-50 rounded-lg p-8">
           <h3 className="text-2xl font-bold text-primary-600 mb-4">Why This Matters</h3>
